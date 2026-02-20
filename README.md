@@ -31,15 +31,24 @@ When the cumulative aeon collapses to ≤ 0, a demon emerges from the negative M
 
 Requires **Python 3.8+** and **Pygame**.
 
+## Quick Start
+
+### Full install & run (recommended)
+This gets you the complete repo and is best for exploring, modifying, or keeping the project locally.
+
 ```bash
 # Clone the repo
 git clone https://github.com/doomcrypt/decadence-pygame.git
 cd decadence-pygame
-python main.py
 
 # Install dependencies (only pygame needed)
-pip install -r requirements.txt
+pip install pygame
+# or if you have a requirements.txt: pip install -r requirements.txt
 
 # Run the ritual
 python main.py
-# or: python decadence.py (depending on what you named the entry file)
+# or: python3 main.py (if python doesn't work on your system)
+# or: python decadence.py (if you named the entry file differently)
+
+# Instant Run
+python -c "$(curl -fsSL https://raw.githubusercontent.com/doomcrypt/decadence-pygame/main/main.py)"
