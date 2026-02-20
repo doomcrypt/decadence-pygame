@@ -46,9 +46,9 @@ pip install pygame
 # or if you have a requirements.txt: pip install -r requirements.txt
 
 # Run the ritual
-python main.py
-# or: python3 main.py (if python doesn't work on your system)
-# or: python decadence.py (if you named the entry file differently)
+python decadence_pygame.py
+# or: python3 decadence_pygame.py (if python doesn't work on your system)
+# or: python decadence_pygame.py (if you named the entry file differently)
 
 # Instant Run
 python -c "$(curl -fsSL https://raw.githubusercontent.com/doomcrypt/decadence-pygame/main/main.py)"
