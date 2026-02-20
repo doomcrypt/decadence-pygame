@@ -33,8 +33,9 @@ Requires **Python 3.8+** and **Pygame**.
 
 ```bash
 # Clone the repo
-git clone https://github.com/doomcrypt/decadence.git
-cd decadence
+git clone https://github.com/doomcrypt/decadence-pygame.git
+cd decadence-pygame
+python main.py
 
 # Install dependencies (only pygame needed)
 pip install -r requirements.txt
