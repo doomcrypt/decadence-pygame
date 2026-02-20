@@ -27,10 +27,6 @@ When the cumulative aeon collapses to ≤ 0, a demon emerges from the negative M
 
 - **Collapse**: Negative cumulative score indexes a Pandemonium demon
 
-## Screenshots
-
-*(Add 3–4 nice screenshots here later – menu, mid-round with possibles highlighted, demon reveal, etc. Use GitHub image upload or imgur links.)*
-
 ## Installation & Run
 
 Requires **Python 3.8+** and **Pygame**.
