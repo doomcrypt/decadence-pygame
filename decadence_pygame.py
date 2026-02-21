@@ -182,7 +182,6 @@ class DecadenceGame:
             self.unpaired[idx] = False
             flipped_rank = self.set2[self.current_flip_idx - 1].rank
             pair_key = tuple(sorted([flipped_rank, self.set1[idx].rank]))
-            global pair_scores
             pair_bonus = pair_scores.get(pair_key, 0)
             self.bonus += pair_bonus
             self.possibles = []  # clear
@@ -366,5 +365,6 @@ class DecadenceGame:
 if __name__ == "__main__":
     game = DecadenceGame()
     game.run()
+
 
 
