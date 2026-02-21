@@ -79,31 +79,6 @@ class Card:
     def is_clicked(self, mouse_pos):
         return self.rect.collidepoint(mouse_pos)
 
-# Positions for Atlantean Cross (adjusted for screen)
-CROSS_POS = [
-    (650, 200),  # 0: North (Far Future)
-    (500, 500),  # 1: West (Destructive)
-    (800, 500),  # 2: East (Creative)
-    (650, 650),  # 3: South (Deep Past)
-    (650, 800)   # 4: Memories & Dreams (below South)
-]
-
-SET2_POS = [
-    (200, 750),
-    (350, 750),
-    (950, 750),
-    (1100, 750),
-    (725, 750)  # center for last?
-]
-
-POSITION_LABELS = [
-    "North: Far Future",
-    "West: Destructive Influences",
-    "East: Creative Influences",
-    "South: Deep Past",
-    "Memories & Dreams"
-]
-
 class DecadenceGame:
     def __init__(self):
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -351,6 +326,7 @@ class DecadenceGame:
 if __name__ == "__main__":
     game = DecadenceGame()
     game.run()
+
 
 
 
