@@ -85,7 +85,6 @@ class DecadenceGame:
         self.cumulative = 0
         self.round_num = 1
         self.possibles = []
-        self.selected_demon = None
         self.reset_deck()
 
     def reset_deck(self):
@@ -317,6 +316,7 @@ class DecadenceGame:
 if __name__ == "__main__":
     game = DecadenceGame()
     game.run()
+
 
 
 
