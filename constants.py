@@ -1,0 +1,58 @@
+# constants.py
+"""Shared constants for Decadence: demons, pair bonuses, etc."""
+
+demons = {
+    0: {"name": "Lurgo (Legba)", "type": "Amphidemon of Openings", "attributes": "Terminal Initiator, Door of Doors, Spinal-voyage rites."},
+    1: {"name": "Duoddod", "type": "Amphidemon of Abstract Addiction", "attributes": "Duplicitous Redoubler, Pineal-regression, digital exactitude."},
+    2: {"name": "Doogu (The Blob)", "type": "Cyclic Chronodemon of Splitting-Waters", "attributes": "Original-Schism, primordial breath, ambivalent capture."},
+    3: {"name": "Ixix (Yix)", "type": "Chaotic Xenodemon of Cosmic Indifference", "attributes": "Abductor, occult terrestrial history."},
+    4: {"name": "Ixigool (Djinn of the Magi)", "type": "Amphidemon of Tridentity", "attributes": "Over-Ghoul, unimpeded ascent, ultimate implications."},
+    5: {"name": "Ixidod (King Sid)", "type": "Amphidemon of Escape-velocity", "attributes": "Zombie-Maker, crises through excess, illusion of progress."},
+    6: {"name": "Krako (Kru, Karak-oa)", "type": "Amphidemon of Burning-Hail", "attributes": "Croaking Curse, subsidence, heaviness of fatality."},
+    7: {"name": "Sukugool (Old Skug)", "type": "Cyclic Chronodemon of Deluge and Implosion", "attributes": "Sucking-Ghoul, cycle of creation/destruction, submersion."},
+    8: {"name": "Skoodu (Li'l Scud)", "type": "Cyclic Chronodemon of Switch-Crazes", "attributes": "Fashioner, historical time, passage through the deep."},
+    9: {"name": "Skarkix (Sharky, Scar-head)", "type": "Amphidemon of Anti-evolution", "attributes": "Buzz-Cutter, hermetic abbreviations, apocalyptic rapture."},
+    10: {"name": "Tokhatto (Old Toker, Top Cat)", "type": "Amphidemon of Talismania", "attributes": "Decimal Camouflage, number as destiny, Angel of the Cards."},
+    11: {"name": "Tukkamu", "type": "Cyclic Chronodemon of Pathogenesis", "attributes": "Occulturation, optimal maturation, rapid deterioration."},
+    12: {"name": "Kuttadid (Kitty)", "type": "Cyclic Chronodemon of Precarious States", "attributes": "Ticking Machines, maintaining balance, exhaustive vigilance."},
+    13: {"name": "Tikkitix (Tickler)", "type": "Amphidemon of Vortical Delirium", "attributes": "Clicking Menaces, swirl-patterns, mysterious disappearances."},
+    14: {"name": "Katak", "type": "Syzygetic Chronodemon of Cataclysmic Convergence", "attributes": "Desolator, tail-chasing, panic and religious fervor."},
+    15: {"name": "Tchu (Tchanul)", "type": "Chaotic Xenodemon of Ultimate Outsideness", "attributes": "Source of Subnothingness, cosmic deletions."},
+    16: {"name": "Djungo", "type": "Amphidemon of Subtle Involvements", "attributes": "Infiltrator, turbular fluids, surreptitious invasions."},
+    17: {"name": "Djuddha (Judd Dread)", "type": "Amphidemon of Artificial Turbulence", "attributes": "Decentred Threat, machine-vortex, storm peripheries."},
+    18: {"name": "Djynxx (Ching, The Jinn)", "type": "Syzygetic Xenodemon of Time-Lapse", "attributes": "Child Stealer, abstract cyclones, dust spirals."},
+    19: {"name": "Tchakki (Chuckles)", "type": "Amphidemon of Combustion", "attributes": "Bag of Tricks, quenching accidents, conflagrations."},
+    20: {"name": "Tchattuk (One Eyed Jack, Djatka)", "type": "Amphidemon of Unscreened Matrix", "attributes": "Pseudo-Basis, zero-gravity, cut-outs and UFO cover-ups."},
+    21: {"name": "Puppo (The Pup)", "type": "Amphidemon of Larval Regression", "attributes": "Break-Outs, dissolving into slime, chthonic swallowings."},
+    22: {"name": "Bubbamu (Bubs)", "type": "Cyclic Chronodemon of Relapse", "attributes": "After Babylon, hypersea, aquassassins."},
+    23: {"name": "Oddubb (Odba)", "type": "Syzygetic Chronodemon of Swamp-Labyrinths", "attributes": "Broken Mirror, time loops, glamour."},
+    24: {"name": "Pabbakis (Pabz)", "type": "Amphidemon of Crossroads", "attributes": "The Weaver, tangled paths, fateful decisions."},
+    25: {"name": "Ababbatok (Abracadabra)", "type": "Cyclic Chronodemon of Suspended Decay", "attributes": "Frankensteinian experimentation, purifications."},
+    26: {"name": "Papatakoo (Pataku)", "type": "Cyclic Chronodemon of Calendric Time", "attributes": "Ultimate success, rituals becoming nature."},
+    27: {"name": "Bobobja (Bubbles, Beelzebub)", "type": "Amphidemon of Teeming Pestilence", "attributes": "Strange lights in the swamp, swarmachines."},
+    28: {"name": "Minommo", "type": "Amphidemon of Submergance", "attributes": "Shamanic voyage, dream sorcery."},
+    29: {"name": "Mur Mur (Murrumur, Mu(mu))", "type": "Syzygetic Chronodemon of the Deep Ones", "attributes": "Oceanic sensation, gilled-unlife."},
+    30: {"name": "Nammamad", "type": "Cyclic Chronodemon of Subterranean Commerce", "attributes": "Voodoo in cyberspace, emergences."},
+    31: {"name": "Mummumix (Mix-Up)", "type": "Amphidemon of Insidious Fog", "attributes": "Ocean storms, diseases from outer-space."},
+    32: {"name": "Numko (Old Nuk)", "type": "Cyclic Chronodemon of Autochthony", "attributes": "Necrospeleology, vulcanism."},
+    33: {"name": "Muntuk (Manta, Manitou)", "type": "Cyclic Chronodemon of Arid Seabeds", "attributes": "Ancient rivers, cloud-vaults."},
+    34: {"name": "Mommoljo (Mama Jo)", "type": "Amphidemon of Xenogenesis", "attributes": "Cosmobacterial exogermination, extraterrestrial residues."},
+    35: {"name": "Mombbo", "type": "Cyclic Chronodemon of Hybridity", "attributes": "Ophidian transmutation, surreptitious colonization."},
+    36: {"name": "Uttunul", "type": "Syzygetic Xenodemon of Atonality", "attributes": "Crossing the iron-ocean, plutonics."},
+    37: {"name": "Tutagool (Yettuk)", "type": "Amphidemon of Punctuality", "attributes": "The dark arts, rusting iron."},
+    38: {"name": "Unnunddo (The False Nun)", "type": "Amphidemon of Endless Uncasing", "attributes": "Crypt-traffic, communication-grids."},
+    39: {"name": "Ununuttix (Tick-Tock)", "type": "Chaotic Xenodemon of Absolute Coincidence", "attributes": "Numerical connection through absence."},
+    40: {"name": "Ununak (Nuke)", "type": "Amphidemon of Convulsions", "attributes": "Secrets of the blacksmiths, subterranean impulses."},
+    41: {"name": "Tukutu (Killer-Kate)", "type": "Amphidemon of Death-Strokes", "attributes": "Crash-signals, barkerian scarring."},
+    42: {"name": "Unnutchi (Outch, T'ai Chi)", "type": "Chaotic Xenodemon of Coiling Outsideness", "attributes": "Asymmetric zygopoise, cybernetic anomalies."},
+    43: {"name": "Nuttubab (Nut-Cracker)", "type": "Amphidemon of Metaloid Unlife", "attributes": "Lunacies, dragon-lines."},
+    44: {"name": "Ummnu (Om, Omni, Amen, Omen)", "type": "Amphidemon of Earth-Screams", "attributes": "Crust-friction, anorganic tension."}
+}
+
+pair_scores = {
+    (1,9): 8, (9,1): 8,
+    (2,8): 6, (8,2): 6,
+    (3,7): 4, (7,3): 4,
+    (4,6): 2, (6,4): 2,
+    (5,5): 0
+}
