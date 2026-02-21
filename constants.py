@@ -71,3 +71,28 @@ GLOW = (255, 100, 100, 128)  # semi-transparent for highlights
 CARD_WIDTH = 100
 CARD_HEIGHT = 150
 CARD_RADIUS = 10  # rounded corners
+
+# Positions for Atlantean Cross (adjusted for screen)
+CROSS_POS = [
+    (650, 200),  # 0: North (Far Future)
+    (500, 500),  # 1: West (Destructive)
+    (800, 500),  # 2: East (Creative)
+    (650, 650),  # 3: South (Deep Past)
+    (650, 800)   # 4: Memories & Dreams (below South)
+]
+
+SET2_POS = [
+    (200, 750),
+    (350, 750),
+    (950, 750),
+    (1100, 750),
+    (725, 750)  # center for last?
+]
+
+POSITION_LABELS = [
+    "North: Far Future",
+    "West: Destructive Influences",
+    "East: Creative Influences",
+    "South: Deep Past",
+    "Memories & Dreams"
+]
