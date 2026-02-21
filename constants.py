@@ -96,3 +96,7 @@ POSITION_LABELS = [
     "South: Deep Past",
     "Memories & Dreams"
 ]
+
+# Suits unicode
+SUITS = ['♣', '♦', '♥', '♠']
+SUIT_COLORS = {0: BLACK, 1: CRIMSON, 2: CRIMSON, 3: BLACK}  # Clubs/Spades black, Diamonds/Hearts red
