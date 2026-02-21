@@ -18,10 +18,6 @@ FONT_MED = pygame.font.Font(None, 48)
 FONT_SMALL = pygame.font.Font(None, 32)
 FONT_TINY = pygame.font.Font(None, 24)
 
-# Suits unicode
-SUITS = ['♣', '♦', '♥', '♠']
-SUIT_COLORS = {0: BLACK, 1: CRIMSON, 2: CRIMSON, 3: BLACK}  # Clubs/Spades black, Diamonds/Hearts red
-
 class Card:
     def __init__(self, rank, suit_idx):
         self.rank = rank
@@ -326,6 +322,7 @@ class DecadenceGame:
 if __name__ == "__main__":
     game = DecadenceGame()
     game.run()
+
 
 
 
