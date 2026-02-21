@@ -2,7 +2,7 @@ import pygame
 import random
 import sys
 import math
-from constants import demons, pair_scores, BLACK, CRIMSON, GOLD, WHITE, DARK_RED, ABYSS_BLUE, SHADOW, GLOW, CARD_WIDTH, CARD_HEIGHT, CARD_RADIUS, CROSS_POS, SET2_POS, POSITION_LABELS, SUITS, SUIT_COLORS
+from constants import demons, pair_scores, BLACK, CRIMSON, GOLD, WHITE, DARK_RED, ABYSS_BLUE, SHADOW, GLOW, CARD_WIDTH, CARD_HEIGHT, CARD_RADIUS, CROSS_POS, SET2_POS, POSITION_LABELS, SUITS, SUIT_COLORS, SCREEN_WIDTH, SCREEN_HEIGHT, FPS
 
 # Initialize Pygame
 pygame.init()
@@ -317,6 +317,7 @@ class DecadenceGame:
 if __name__ == "__main__":
     game = DecadenceGame()
     game.run()
+
 
 
 
