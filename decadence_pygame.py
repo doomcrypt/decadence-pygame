@@ -7,11 +7,6 @@ from constants import demons, pair_scores, BLACK, CRIMSON, GOLD, WHITE, DARK_RED
 # Initialize Pygame
 pygame.init()
 
-# Constants
-SCREEN_WIDTH = 1400
-SCREEN_HEIGHT = 900
-FPS = 60
-
 # Fonts
 FONT_LARGE = pygame.font.Font(None, 72)
 FONT_MED = pygame.font.Font(None, 48)
@@ -322,6 +317,7 @@ class DecadenceGame:
 if __name__ == "__main__":
     game = DecadenceGame()
     game.run()
+
 
 
 
