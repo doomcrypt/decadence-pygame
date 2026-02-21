@@ -1,6 +1,9 @@
 # constants.py
 """Shared constants for Decadence: demons, pair bonuses, etc."""
 
+# ────────────────────────────────────────────────
+# Pandemonium Matrix – Demons (Mesh-00 to Mesh-44)
+# ────────────────────────────────────────────────
 demons = {
     0: {"name": "Lurgo (Legba)", "type": "Amphidemon of Openings", "attributes": "Terminal Initiator, Door of Doors, Spinal-voyage rites."},
     1: {"name": "Duoddod", "type": "Amphidemon of Abstract Addiction", "attributes": "Duplicitous Redoubler, Pineal-regression, digital exactitude."},
@@ -49,6 +52,9 @@ demons = {
     44: {"name": "Ummnu (Om, Omni, Amen, Omen)", "type": "Amphidemon of Earth-Screams", "attributes": "Crust-friction, anorganic tension."}
 }
 
+# ────────────────────────────────────────────────
+# Pairing Bonuses
+# ────────────────────────────────────────────────
 pair_scores = {
     (1,9): 8, (9,1): 8,
     (2,8): 6, (8,2): 6,
@@ -57,7 +63,13 @@ pair_scores = {
     (5,5): 0
 }
 
-# Colors (occult theme: black void, crimson, gold, abyssal blue)
+# ────────────────────────────────────────────────
+# Pygame Display & Colors
+# ────────────────────────────────────────────────
+SCREEN_WIDTH = 1400
+SCREEN_HEIGHT = 900
+FPS = 60
+
 BLACK = (0, 0, 0)
 CRIMSON = (139, 0, 0)
 GOLD = (255, 215, 0)
@@ -67,12 +79,16 @@ ABYSS_BLUE = (10, 20, 40)
 SHADOW = (20, 20, 20)
 GLOW = (255, 100, 100, 128)  # semi-transparent for highlights
 
-# Card dimensions
+# ────────────────────────────────────────────────
+# Card Appearance
+# ────────────────────────────────────────────────
 CARD_WIDTH = 100
 CARD_HEIGHT = 150
 CARD_RADIUS = 10  # rounded corners
 
-# Positions for Atlantean Cross (adjusted for screen)
+# ────────────────────────────────────────────────
+# Layout Positions (Atlantean Cross + Set-2)
+# ────────────────────────────────────────────────
 CROSS_POS = [
     (650, 200),  # 0: North (Far Future)
     (500, 500),  # 1: West (Destructive)
@@ -97,12 +113,10 @@ POSITION_LABELS = [
     "Memories & Dreams"
 ]
 
-# Suits unicode – use ASCII fallback ('C','D','H','S') on Windows terminals if needed
-SUITS = ['♣', '♦', '♥', '♠']
+# ────────────────────────────────────────────────
+# Suits & Colors
+# ────────────────────────────────────────────────
+# Suits (unicode preferred, ASCII fallback for Windows terminals)
+SUITS = ['♣', '♦', '♥', '♠'] if sys.platform != 'win32' else ['C', 'D', 'H', 'S']
 SUIT_COLORS = {0: BLACK, 1: CRIMSON, 2: CRIMSON, 3: BLACK}  # Clubs/Spades black, Diamonds/Hearts red
-
-# Constants
-SCREEN_WIDTH = 1400
-SCREEN_HEIGHT = 900
-FPS = 60
 
