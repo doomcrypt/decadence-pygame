@@ -12,20 +12,6 @@ SCREEN_WIDTH = 1400
 SCREEN_HEIGHT = 900
 FPS = 60
 
-# Colors (occult theme: black void, crimson, gold, abyssal blue)
-BLACK = (0, 0, 0)
-CRIMSON = (139, 0, 0)
-GOLD = (255, 215, 0)
-WHITE = (255, 255, 255)
-DARK_RED = (100, 0, 0)
-ABYSS_BLUE = (10, 20, 40)
-SHADOW = (20, 20, 20)
-GLOW = (255, 100, 100, 128)  # semi-transparent for highlights
-
-CARD_WIDTH = 100
-CARD_HEIGHT = 150
-CARD_RADIUS = 10  # rounded corners
-
 # Fonts
 FONT_LARGE = pygame.font.Font(None, 72)
 FONT_MED = pygame.font.Font(None, 48)
@@ -365,6 +351,7 @@ class DecadenceGame:
 if __name__ == "__main__":
     game = DecadenceGame()
     game.run()
+
 
 
 
