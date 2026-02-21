@@ -1,6 +1,8 @@
 # constants.py
 """Shared constants for Decadence: demons, pair bonuses, etc."""
 
+import sys
+
 # ────────────────────────────────────────────────
 # Window & Display Basics
 # ────────────────────────────────────────────────
@@ -122,5 +124,6 @@ pair_scores = {
     (4,6): 2, (6,4): 2,
     (5,5): 0
 }
+
 
 
