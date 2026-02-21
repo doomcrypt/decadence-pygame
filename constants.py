@@ -2,6 +2,66 @@
 """Shared constants for Decadence: demons, pair bonuses, etc."""
 
 # ────────────────────────────────────────────────
+# Window & Display Basics
+# ────────────────────────────────────────────────
+SCREEN_WIDTH = 1400
+SCREEN_HEIGHT = 900
+FPS = 60
+
+# ────────────────────────────────────────────────
+# Colors (occult theme)
+# ────────────────────────────────────────────────
+BLACK = (0, 0, 0)
+CRIMSON = (139, 0, 0)
+GOLD = (255, 215, 0)
+WHITE = (255, 255, 255)
+DARK_RED = (100, 0, 0)
+ABYSS_BLUE = (10, 20, 40)
+SHADOW = (20, 20, 20)
+GLOW = (255, 100, 100, 128)  # semi-transparent for highlights
+
+# ────────────────────────────────────────────────
+# Card Appearance
+# ────────────────────────────────────────────────
+CARD_WIDTH = 100
+CARD_HEIGHT = 150
+CARD_RADIUS = 10  # rounded corners
+
+# ────────────────────────────────────────────────
+# Layout Positions (Atlantean Cross + Set-2)
+# ────────────────────────────────────────────────
+CROSS_POS = [
+    (650, 200),  # 0: North (Far Future)
+    (500, 500),  # 1: West (Destructive)
+    (800, 500),  # 2: East (Creative)
+    (650, 650),  # 3: South (Deep Past)
+    (650, 800)   # 4: Memories & Dreams (below South)
+]
+
+SET2_POS = [
+    (200, 750),    # left
+    (350, 750),    # left-center
+    (725, 750),    # true center (for the 5th / last card)
+    (950, 750),    # right-center
+    (1100, 750),   # right
+]
+
+POSITION_LABELS = [
+    "North: Far Future",
+    "West: Destructive Influences",
+    "East: Creative Influences",
+    "South: Deep Past",
+    "Memories & Dreams"
+]
+
+# ────────────────────────────────────────────────
+# Suits & Colors
+# ────────────────────────────────────────────────
+# Suits (unicode preferred, ASCII fallback for Windows terminals)
+SUITS = ['♣', '♦', '♥', '♠'] if sys.platform != 'win32' else ['C', 'D', 'H', 'S']
+SUIT_COLORS = {0: BLACK, 1: CRIMSON, 2: CRIMSON, 3: BLACK}  # Clubs/Spades black, Diamonds/Hearts red
+
+# ────────────────────────────────────────────────
 # Pandemonium Matrix – Demons (Mesh-00 to Mesh-44)
 # ────────────────────────────────────────────────
 demons = {
@@ -63,60 +123,4 @@ pair_scores = {
     (5,5): 0
 }
 
-# ────────────────────────────────────────────────
-# Pygame Display & Colors
-# ────────────────────────────────────────────────
-SCREEN_WIDTH = 1400
-SCREEN_HEIGHT = 900
-FPS = 60
-
-BLACK = (0, 0, 0)
-CRIMSON = (139, 0, 0)
-GOLD = (255, 215, 0)
-WHITE = (255, 255, 255)
-DARK_RED = (100, 0, 0)
-ABYSS_BLUE = (10, 20, 40)
-SHADOW = (20, 20, 20)
-GLOW = (255, 100, 100, 128)  # semi-transparent for highlights
-
-# ────────────────────────────────────────────────
-# Card Appearance
-# ────────────────────────────────────────────────
-CARD_WIDTH = 100
-CARD_HEIGHT = 150
-CARD_RADIUS = 10  # rounded corners
-
-# ────────────────────────────────────────────────
-# Layout Positions (Atlantean Cross + Set-2)
-# ────────────────────────────────────────────────
-CROSS_POS = [
-    (650, 200),  # 0: North (Far Future)
-    (500, 500),  # 1: West (Destructive)
-    (800, 500),  # 2: East (Creative)
-    (650, 650),  # 3: South (Deep Past)
-    (650, 800)   # 4: Memories & Dreams (below South)
-]
-
-SET2_POS = [
-    (200, 750),
-    (350, 750),
-    (950, 750),
-    (1100, 750),
-    (725, 750)  # center for last?
-]
-
-POSITION_LABELS = [
-    "North: Far Future",
-    "West: Destructive Influences",
-    "East: Creative Influences",
-    "South: Deep Past",
-    "Memories & Dreams"
-]
-
-# ────────────────────────────────────────────────
-# Suits & Colors
-# ────────────────────────────────────────────────
-# Suits (unicode preferred, ASCII fallback for Windows terminals)
-SUITS = ['♣', '♦', '♥', '♠'] if sys.platform != 'win32' else ['C', 'D', 'H', 'S']
-SUIT_COLORS = {0: BLACK, 1: CRIMSON, 2: CRIMSON, 3: BLACK}  # Clubs/Spades black, Diamonds/Hearts red
 
