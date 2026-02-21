@@ -97,7 +97,7 @@ POSITION_LABELS = [
     "Memories & Dreams"
 ]
 
-# Suits unicode
+# Suits unicode – use ASCII fallback ('C','D','H','S') on Windows terminals if needed
 SUITS = ['♣', '♦', '♥', '♠']
 SUIT_COLORS = {0: BLACK, 1: CRIMSON, 2: CRIMSON, 3: BLACK}  # Clubs/Spades black, Diamonds/Hearts red
 
@@ -105,3 +105,4 @@ SUIT_COLORS = {0: BLACK, 1: CRIMSON, 2: CRIMSON, 3: BLACK}  # Clubs/Spades black
 SCREEN_WIDTH = 1400
 SCREEN_HEIGHT = 900
 FPS = 60
+
